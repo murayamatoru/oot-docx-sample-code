@@ -9,7 +9,7 @@ import java.util.Date;
 public class Starter {
 	public static void main(String[] args) {
 		Radio radio = new Radio();
-		Class c = radio.getClass();
+		Class<?> c = radio.getClass();
 		System.out.println("ref_a is an instance of " + c.getName());
 		Method[] methods = c.getMethods();
 		System.out.println("<method name list>");
